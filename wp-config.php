@@ -1,5 +1,4 @@
 <?php
-$host = "$OPENSHIFT_MYSQL_DB_HOST:$OPENSHIFT_MYSQL_DB_PORT/";
 /**
  * Основные параметры WordPress.
  *
@@ -19,24 +18,27 @@ $host = "$OPENSHIFT_MYSQL_DB_HOST:$OPENSHIFT_MYSQL_DB_PORT/";
  * @package WordPress
  */
 
-// ** Параметры MySQL: Эту информацию можно получить у вашего хостинг-провайдера ** //
-/** Имя базы данных для WordPress */
-define('DB_NAME', 'lubava');
+if (getenv('OPENSHIFT_APP_NAME') != "") {
+	/** The name of the database for WordPress */
+	define('DB_NAME', getenv('OPENSHIFT_APP_NAME'));
+	/** MySQL database username */
+	define('DB_USER', getenv('OPENSHIFT_MYSQL_DB_USERNAME'));
+	/** MySQL database password */
+	define('DB_PASSWORD', getenv('OPENSHIFT_MYSQL_DB_PASSWORD'));
+	/** MySQL hostname */
+	define('DB_HOST', getenv('OPENSHIFT_MYSQL_DB_HOST') . ':' . getenv('OPENSHIFT_MYSQL_DB_PORT'));
+	/** These settings can be configured for your local development environment
+	and will not affect your OpenShift configuration */
+} else {
+	define('DB_NAME', 'pro_massage');
+	/** MySQL database username */
+	define('DB_USER', 'root');
+	/** MySQL database password */
+	define('DB_PASSWORD', '');
+	/** MySQL hostname */
+	define('DB_HOST', 'localhost');
+}
 
-/** Имя пользователя MySQL */
-define('DB_USER', 'adminwHGQTjf');
-
-/** Пароль к базе данных MySQL */
-define('DB_PASSWORD', 'ubaMVhremzuN');
-
-/** Имя сервера MySQL */
-define('DB_HOST', $host);
-
-/** Кодировка базы данных для создания таблиц. */
-define('DB_CHARSET', 'utf8mb4');
-
-/** Схема сопоставления. Не меняйте, если не уверены. */
-define('DB_COLLATE', '');
 
 /**#@+
  * Уникальные ключи и соли для аутентификации.
