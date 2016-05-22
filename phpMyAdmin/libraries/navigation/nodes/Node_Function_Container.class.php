@@ -18,6 +18,8 @@ class Node_Function_Container extends Node
 {
     /**
      * Initialises the class
+     *
+     * @return Node_Column_Container
      */
     public function __construct()
     {
@@ -25,11 +27,9 @@ class Node_Function_Container extends Node
         $this->icon  = PMA_Util::getImage('b_routines.png', __('Functions'));
         $this->links = array(
             'text' => 'db_routines.php?server=' . $GLOBALS['server']
-                    . '&amp;db=%1$s&amp;token=' . $_SESSION[' PMA_token ']
-                    . '&amp;type=FUNCTION',
+                    . '&amp;db=%1$s&amp;token=' . $GLOBALS['token'],
             'icon' => 'db_routines.php?server=' . $GLOBALS['server']
-                    . '&amp;db=%1$s&amp;token=' . $_SESSION[' PMA_token ']
-                    . '&amp;type=FUNCTION',
+                    . '&amp;db=%1$s&amp;token=' . $GLOBALS['token'],
         );
         $this->real_name = 'functions';
 
@@ -39,10 +39,10 @@ class Node_Function_Container extends Node
         $new->icon  = PMA_Util::getImage('b_routine_add.png', $new_label);
         $new->links = array(
             'text' => 'db_routines.php?server=' . $GLOBALS['server']
-                    . '&amp;db=%2$s&amp;token=' . $_SESSION[' PMA_token ']
+                    . '&amp;db=%2$s&amp;token=' . $GLOBALS['token']
                     . '&add_item=1&amp;item_type=FUNCTION',
             'icon' => 'db_routines.php?server=' . $GLOBALS['server']
-                    . '&amp;db=%2$s&amp;token=' . $_SESSION[' PMA_token ']
+                    . '&amp;db=%2$s&amp;token=' . $GLOBALS['token']
                     . '&add_item=1&amp;item_type=FUNCTION',
         );
         $new->classes = 'new_function italics';

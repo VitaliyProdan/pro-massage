@@ -27,19 +27,11 @@ class Node_View_Container extends Node
         $this->icon  = PMA_Util::getImage('b_views.png', __('Views'));
         $this->links = array(
             'text' => 'db_structure.php?server=' . $GLOBALS['server']
-                    . '&amp;db=%1$s&amp;tbl_type=view'
-                    . '&amp;token=' . $_SESSION[' PMA_token '],
+                    . '&amp;db=%1$s&amp;token=' . $GLOBALS['token'],
             'icon' => 'db_structure.php?server=' . $GLOBALS['server']
-                    . '&amp;db=%1$s&amp;tbl_type=view'
-                    . '&amp;token=' . $_SESSION[' PMA_token '],
+                    . '&amp;db=%1$s&amp;token=' . $GLOBALS['token'],
         );
-        if ($GLOBALS['cfg']['NavigationTreeEnableGrouping']) {
-            $this->separator       = $GLOBALS['cfg']['NavigationTreeTableSeparator'];
-            $this->separator_depth = (int)(
-                $GLOBALS['cfg']['NavigationTreeTableLevel']
-            );
-        }
-        $this->classes   = 'viewContainer subContainer';
+        $this->classes   = 'viewContainer';
         $this->real_name = 'views';
 
         $new_label = _pgettext('Create new view', 'New');
@@ -48,9 +40,9 @@ class Node_View_Container extends Node
         $new->icon  = PMA_Util::getImage('b_view_add.png', $new_label);
         $new->links = array(
             'text' => 'view_create.php?server=' . $GLOBALS['server']
-                    . '&amp;db=%2$s&amp;token=' . $_SESSION[' PMA_token '],
+                    . '&amp;db=%2$s&amp;token=' . $GLOBALS['token'],
             'icon' => 'view_create.php?server=' . $GLOBALS['server']
-                    . '&amp;db=%2$s&amp;token=' . $_SESSION[' PMA_token '],
+                    . '&amp;db=%2$s&amp;token=' . $GLOBALS['token'],
         );
         $new->classes = 'new_view italics';
         $this->addChild($new);

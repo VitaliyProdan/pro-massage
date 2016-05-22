@@ -13,11 +13,12 @@ if (! defined('PHPMYADMIN')) {
  * This function is called from one of the other functions in this file
  * and it completes the handling of the export functionality.
  *
+ * @param string $item_name   The name of the item that we are exporting
  * @param string $export_data The SQL query to create the requested item
  *
  * @return void
  */
-function PMA_RTE_handleExport($export_data)
+function PMA_RTE_handleExport($item_name, $export_data)
 {
     global $db;
 
@@ -39,13 +40,13 @@ function PMA_RTE_handleExport($export_data)
         }
     } else {
         $_db = htmlspecialchars(PMA_Util::backquote($db));
-        $message  = __('Error in processing request:') . ' '
+        $response = __('Error in Processing Request') . ' : '
                   . sprintf(PMA_RTE_getWord('not_found'), $item_name, $_db);
-        $response = PMA_message::error($message);
+        $response = PMA_message::error($response);
         if ($GLOBALS['is_ajax_request'] == true) {
             $response = PMA_Response::getInstance();
             $response->isSuccess(false);
-            $response->addJSON('message', $message);
+            $response->addJSON('message', $response);
             exit;
         } else {
             $response->display();
@@ -65,8 +66,8 @@ function PMA_EVN_handleExport()
 
     if (! empty($_GET['export_item']) && ! empty($_GET['item_name'])) {
         $item_name = $_GET['item_name'];
-        $export_data = $GLOBALS['dbi']->getDefinition($db, 'EVENT', $item_name);
-        PMA_RTE_handleExport($export_data);
+        $export_data = PMA_DBI_get_definition($db, 'EVENT', $item_name);
+        PMA_RTE_handleExport($item_name, $export_data);
     }
 } // end PMA_EVN_handleExport()
 
@@ -85,12 +86,12 @@ function PMA_RTN_handleExport()
         && ! empty($_GET['item_type'])
     ) {
         if ($_GET['item_type'] == 'FUNCTION' || $_GET['item_type'] == 'PROCEDURE') {
-            $export_data = $GLOBALS['dbi']->getDefinition(
+            $export_data = PMA_DBI_get_definition(
                 $db,
                 $_GET['item_type'],
                 $_GET['item_name']
             );
-            PMA_RTE_handleExport($export_data);
+            PMA_RTE_handleExport($_GET['item_name'], $export_data);
         }
     }
 } // end PMA_RTN_handleExport()
@@ -107,7 +108,7 @@ function PMA_TRI_handleExport()
 
     if (! empty($_GET['export_item']) && ! empty($_GET['item_name'])) {
         $item_name = $_GET['item_name'];
-        $triggers = $GLOBALS['dbi']->getTriggers($db, $table, '');
+        $triggers = PMA_DBI_get_triggers($db, $table, '');
         $export_data = false;
         foreach ($triggers as $trigger) {
             if ($trigger['name'] === $item_name) {
@@ -115,7 +116,7 @@ function PMA_TRI_handleExport()
                 break;
             }
         }
-        PMA_RTE_handleExport($export_data);
+        PMA_RTE_handleExport($item_name, $export_data);
     }
 } // end PMA_TRI_handleExport()
 ?>

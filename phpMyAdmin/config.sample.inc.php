@@ -14,7 +14,7 @@
  * This is needed for cookie based authentication to encrypt password in
  * cookie
  */
-$cfg['blowfish_secret'] = ''; /* YOU MUST FILL IN THIS FOR COOKIE AUTH! */
+$cfg['blowfish_secret'] = 'a8b7c6d'; /* YOU MUST FILL IN THIS FOR COOKIE AUTH! */
 
 /*
  * Servers configuration
@@ -28,9 +28,11 @@ $i++;
 /* Authentication type */
 $cfg['Servers'][$i]['auth_type'] = 'cookie';
 /* Server parameters */
-$cfg['Servers'][$i]['host'] = 'localhost';
+$cfg['Servers'][$i]['host'] = getenv('OPENSHIFT_MYSQL_DB_HOST') . ':' . getenv('OPENSHIFT_MYSQL_DB_PORT');
 $cfg['Servers'][$i]['connect_type'] = 'tcp';
 $cfg['Servers'][$i]['compress'] = false;
+/* Select mysql if your server does not have mysqli */
+$cfg['Servers'][$i]['extension'] = 'mysqli';
 $cfg['Servers'][$i]['AllowNoPassword'] = false;
 
 /*
@@ -39,7 +41,6 @@ $cfg['Servers'][$i]['AllowNoPassword'] = false;
 
 /* User used to manipulate with storage */
 // $cfg['Servers'][$i]['controlhost'] = '';
-// $cfg['Servers'][$i]['controlport'] = '';
 // $cfg['Servers'][$i]['controluser'] = 'pma';
 // $cfg['Servers'][$i]['controlpass'] = 'pmapass';
 
@@ -54,14 +55,9 @@ $cfg['Servers'][$i]['AllowNoPassword'] = false;
 // $cfg['Servers'][$i]['history'] = 'pma__history';
 // $cfg['Servers'][$i]['table_uiprefs'] = 'pma__table_uiprefs';
 // $cfg['Servers'][$i]['tracking'] = 'pma__tracking';
+// $cfg['Servers'][$i]['designer_coords'] = 'pma__designer_coords';
 // $cfg['Servers'][$i]['userconfig'] = 'pma__userconfig';
 // $cfg['Servers'][$i]['recent'] = 'pma__recent';
-// $cfg['Servers'][$i]['favorite'] = 'pma__favorite';
-// $cfg['Servers'][$i]['users'] = 'pma__users';
-// $cfg['Servers'][$i]['usergroups'] = 'pma__usergroups';
-// $cfg['Servers'][$i]['navigationhiding'] = 'pma__navigationhiding';
-// $cfg['Servers'][$i]['savedsearches'] = 'pma__savedsearches';
-// $cfg['Servers'][$i]['central_columns'] = 'pma__central_columns';
 /* Contrib / Swekey authentication */
 // $cfg['Servers'][$i]['auth_swekey_config'] = '/etc/swekey-pma.conf';
 
@@ -74,12 +70,6 @@ $cfg['Servers'][$i]['AllowNoPassword'] = false;
  */
 $cfg['UploadDir'] = '';
 $cfg['SaveDir'] = '';
-
-/**
- * Whether to display icons or text or both icons and text in table row
- * action segment. Value can be either of 'icons', 'text' or 'both'.
- */
-//$cfg['RowActionType'] = 'both';
 
 /**
  * Defines whether a user should be displayed a "show all (records)"
@@ -116,6 +106,12 @@ $cfg['SaveDir'] = '';
 //$cfg['DefaultLang'] = 'de';
 
 /**
+ * default display direction (horizontal|vertical|horizontalflipped)
+ */
+//$cfg['DefaultDisplay'] = 'vertical';
+
+
+/**
  * How many columns should be used for table display of a database?
  * (a value larger than 1 results in some information being hidden)
  * default = 1
@@ -137,13 +133,6 @@ $cfg['SaveDir'] = '';
  * default = 25
  */
 //$cfg['QueryHistoryMax'] = 100;
-
-/**
- * Should error reporting be enabled for JavaScript errors
- *
- * default = 'ask'
- */
-//$cfg['SendErrorReports'] = 'ask';
 
 /*
  * You can find more configuration options in the documentation

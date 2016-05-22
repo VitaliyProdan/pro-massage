@@ -27,11 +27,9 @@ class Node_Procedure_Container extends Node
         $this->icon  = PMA_Util::getImage('b_routines.png', __('Procedures'));
         $this->links = array(
             'text' => 'db_routines.php?server=' . $GLOBALS['server']
-                    . '&amp;db=%1$s&amp;token=' . $_SESSION[' PMA_token ']
-                    . '&amp;type=PROCEDURE',
+                    . '&amp;db=%1$s&amp;token=' . $GLOBALS['token'],
             'icon' => 'db_routines.php?server=' . $GLOBALS['server']
-                    . '&amp;db=%1$s&amp;token=' . $_SESSION[' PMA_token ']
-                    . '&amp;type=PROCEDURE',
+                    . '&amp;db=%1$s&amp;token=' . $GLOBALS['token'],
         );
         $this->real_name = 'procedures';
 
@@ -41,10 +39,10 @@ class Node_Procedure_Container extends Node
         $new->icon  = PMA_Util::getImage('b_routine_add.png', $new_label);
         $new->links = array(
             'text' => 'db_routines.php?server=' . $GLOBALS['server']
-                    . '&amp;db=%2$s&amp;token=' . $_SESSION[' PMA_token ']
+                    . '&amp;db=%2$s&amp;token=' . $GLOBALS['token']
                     . '&add_item=1',
             'icon' => 'db_routines.php?server=' . $GLOBALS['server']
-                    . '&amp;db=%2$s&amp;token=' . $_SESSION[' PMA_token ']
+                    . '&amp;db=%2$s&amp;token=' . $GLOBALS['token']
                     . '&add_item=1',
         );
         $new->classes = 'new_procedure italics';

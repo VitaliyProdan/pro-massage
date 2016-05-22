@@ -41,42 +41,28 @@ if (isset($_REQUEST['filename']) && isset($_REQUEST['image'])) {
         $filename = $_REQUEST['filename'];
     }
 
-    /** @var PMA_String $pmaString */
-    $pmaString = $GLOBALS['PMA_String'];
-
     /* Decode data */
     if ($extension != 'svg') {
-        $data = /*overload*/mb_substr(
-            $_REQUEST['image'],
-            /*overload*/mb_strpos($_REQUEST['image'], ',') + 1
-        );
+        $data = substr($_REQUEST['image'], strpos($_REQUEST['image'], ',') + 1);
         $data = base64_decode($data);
     } else {
         $data = $_REQUEST['image'];
     }
 
     /* Send download header */
-    PMA_downloadHeader(
-        $filename,
-        $_REQUEST['type'],
-        /*overload*/mb_strlen($data)
-    );
+    PMA_downloadHeader($filename, $_REQUEST['type'], strlen($data));
 
     /* Send data */
     echo $data;
 
 } else if (isset($_REQUEST['monitorconfig'])) {
     /* For monitor chart config export */
-    PMA_downloadHeader('monitor.cfg', 'application/json; charset=UTF-8');
-    header('X-Content-Type-Options: nosniff');
-
+    PMA_downloadHeader('monitor.cfg', 'application/force-download');
     echo urldecode($_REQUEST['monitorconfig']);
 
 } else if (isset($_REQUEST['import'])) {
     /* For monitor chart config import */
-    header('Content-Type: application/json; charset=UTF-8');
-    header('X-Content-Type-Options: nosniff');
-
+    header('Content-type: text/plain');
     if (!file_exists($_FILES['file']['tmp_name'])) {
         exit();
     }
