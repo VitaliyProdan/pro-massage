@@ -1,0 +1,36 @@
+[2016-06-29 20:15:26] Настройки бекапа:Папку "Themes "; Папку "Uploads"; Любую папку внутри папки "wp-content"; Database backup; Исключить:upgrade,cache.
+[2016-06-29 20:15:26] Clear temporary directory
+[2016-06-29 20:15:26] Send request to create backup
+[2016-06-29 20:15:26] Scanning files.
+[2016-06-29 20:15:27] 822 files scanned.
+[2016-06-29 20:15:27] Total stacks: 23
+[2016-06-29 20:15:27] Create backup filesystem in folder: D:\OpenServer\domains\pro-massage.dev/wp-content/upsupsystic/backup_2016_06_29-20_15_26_id4
+[2016-06-29 20:15:28] Successful created stack: D:\OpenServer\domains\pro-massage.dev/wp-content/upsupsystic/backup_2016_06_29-20_15_26_id4\BUP57742c5f240be.zip
+[2016-06-29 20:15:29] Successful created stack: D:\OpenServer\domains\pro-massage.dev/wp-content/upsupsystic/backup_2016_06_29-20_15_26_id4\BUP57742c602259f.zip
+[2016-06-29 20:15:31] Successful created stack: D:\OpenServer\domains\pro-massage.dev/wp-content/upsupsystic/backup_2016_06_29-20_15_26_id4\BUP57742c61d1e99.zip
+[2016-06-29 20:15:33] Successful created stack: D:\OpenServer\domains\pro-massage.dev/wp-content/upsupsystic/backup_2016_06_29-20_15_26_id4\BUP57742c635df79.zip
+[2016-06-29 20:15:34] Successful created stack: D:\OpenServer\domains\pro-massage.dev/wp-content/upsupsystic/backup_2016_06_29-20_15_26_id4\BUP57742c6552080.zip
+[2016-06-29 20:15:35] Successful created stack: D:\OpenServer\domains\pro-massage.dev/wp-content/upsupsystic/backup_2016_06_29-20_15_26_id4\BUP57742c661e875.zip
+[2016-06-29 20:15:36] Successful created stack: D:\OpenServer\domains\pro-massage.dev/wp-content/upsupsystic/backup_2016_06_29-20_15_26_id4\BUP57742c67626ae.zip
+[2016-06-29 20:15:37] Successful created stack: D:\OpenServer\domains\pro-massage.dev/wp-content/upsupsystic/backup_2016_06_29-20_15_26_id4\BUP57742c6885588.zip
+[2016-06-29 20:15:39] Successful created stack: D:\OpenServer\domains\pro-massage.dev/wp-content/upsupsystic/backup_2016_06_29-20_15_26_id4\BUP57742c69ec649.zip
+[2016-06-29 20:15:40] Successful created stack: D:\OpenServer\domains\pro-massage.dev/wp-content/upsupsystic/backup_2016_06_29-20_15_26_id4\BUP57742c6b548e8.zip
+[2016-06-29 20:15:41] Successful created stack: D:\OpenServer\domains\pro-massage.dev/wp-content/upsupsystic/backup_2016_06_29-20_15_26_id4\BUP57742c6c5ba6b.zip
+[2016-06-29 20:15:42] Successful created stack: D:\OpenServer\domains\pro-massage.dev/wp-content/upsupsystic/backup_2016_06_29-20_15_26_id4\BUP57742c6d1e61e.zip
+[2016-06-29 20:15:43] Successful created stack: D:\OpenServer\domains\pro-massage.dev/wp-content/upsupsystic/backup_2016_06_29-20_15_26_id4\BUP57742c6e0fbf3.zip
+[2016-06-29 20:15:44] Successful created stack: D:\OpenServer\domains\pro-massage.dev/wp-content/upsupsystic/backup_2016_06_29-20_15_26_id4\BUP57742c6fc46f7.zip
+[2016-06-29 20:15:45] Successful created stack: D:\OpenServer\domains\pro-massage.dev/wp-content/upsupsystic/backup_2016_06_29-20_15_26_id4\BUP57742c70bb2be.zip
+[2016-06-29 20:15:45] Successful created stack: D:\OpenServer\domains\pro-massage.dev/wp-content/upsupsystic/backup_2016_06_29-20_15_26_id4\BUP57742c7134e68.zip
+[2016-06-29 20:15:46] Successful created stack: D:\OpenServer\domains\pro-massage.dev/wp-content/upsupsystic/backup_2016_06_29-20_15_26_id4\BUP57742c71ac4ac.zip
+[2016-06-29 20:15:46] Successful created stack: D:\OpenServer\domains\pro-massage.dev/wp-content/upsupsystic/backup_2016_06_29-20_15_26_id4\BUP57742c72346d1.zip
+[2016-06-29 20:15:47] Successful created stack: D:\OpenServer\domains\pro-massage.dev/wp-content/upsupsystic/backup_2016_06_29-20_15_26_id4\BUP57742c72d2266.zip
+[2016-06-29 20:15:48] Successful created stack: D:\OpenServer\domains\pro-massage.dev/wp-content/upsupsystic/backup_2016_06_29-20_15_26_id4\BUP57742c739dabb.zip
+[2016-06-29 20:15:48] Successful created stack: D:\OpenServer\domains\pro-massage.dev/wp-content/upsupsystic/backup_2016_06_29-20_15_26_id4\BUP57742c7427068.zip
+[2016-06-29 20:15:49] Successful created stack: D:\OpenServer\domains\pro-massage.dev/wp-content/upsupsystic/backup_2016_06_29-20_15_26_id4\BUP57742c74b4e11.zip
+[2016-06-29 20:15:50] Successful created stack: D:\OpenServer\domains\pro-massage.dev/wp-content/upsupsystic/backup_2016_06_29-20_15_26_id4\BUP57742c75e24e5.zip
+[2016-06-29 20:15:50] Filesystem backup complete
+[2016-06-29 20:15:50] Create database backup : D:\OpenServer\domains\pro-massage.dev/wp-content/upsupsystic/backup_2016_06_29-20_15_26_id4.sql
+[2016-06-29 20:15:51] Database backup complete
+[2016-06-29 20:15:51] Backup successful complete!
+[2016-06-29 20:15:51] Please, don't delete the line that is lower, it is used for technical purposes!
+a:8:{s:4:"full";s:1:"0";s:7:"wp_core";s:1:"0";s:7:"plugins";s:1:"0";s:6:"themes";s:1:"1";s:7:"uploads";s:1:"1";s:15:"any_directories";s:1:"1";s:7:"exclude";s:13:"upgrade,cache";s:16:"backupFolderSize";i:54965717;}
