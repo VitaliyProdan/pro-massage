@@ -1,0 +1,247 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Ask Me\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: Sun Jun 26 2016 20:34:53 GMT+0300 (Финляндия (лето))\n"
+"PO-Revision-Date: Sun Jun 26 2016 20:36:07 GMT+0300 (Финляндия (лето))\n"
+"Last-Translator: Администратор <vitaliy_prodan@mail.ru>\n"
+"Language-Team: \n"
+"Language: Russian\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10 >= 2 && "
+"n%10<=4 &&(n%100<10||n%100 >= 20)? 1 : 2)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: ..\n"
+"X-Poedit-KeywordsList: _:1;gettext:1;dgettext:2;ngettext:1,2;dngettext:2,3;"
+"__:1;_e:1;_c:1;_n:1,2;_n_noop:1,2;_nc:1,2;__ngettext:1,2;__ngettext_noop:1,2;"
+"_x:1,2c;_ex:1,2c;_nx:1,2,4c;_nx_noop:1,2,3c;_n_js:1,2;_nx_js:1,2,3c;"
+"esc_attr__:1;esc_html__:1;esc_attr_e:1;esc_html_e:1;esc_attr_x:1,2c;"
+"esc_html_x:1,2c;comments_number_link:2,3;t:1;st:1;trans:1;transChoice:1,2\n"
+"X-Loco-Target-Locale: ru_RU\n"
+"X-Generator: Loco - https://localise.biz/"
+
+#. Name of the plugin
+msgid "Ask Me"
+msgstr "Спросить"
+
+#. URI of the plugin
+msgid "http://kilo-moana.com/ask-me-wordpress-plugin"
+msgstr ""
+
+#. Description of the plugin
+msgid "Simple Plugin to let your users ask questions."
+msgstr ""
+
+#. Author of the plugin
+msgid "Timo Schiller, Alexander Siemer-Schmetzke"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "http://kilo-moana.com"
+msgstr ""
+
+#: ../askme.php:24 ../askme.php:27
+msgid "New Ask Me"
+msgstr "Новый вопрос"
+
+#: ../askme.php:25
+msgid "Add new Ask Me"
+msgstr "Новый вопрос"
+
+#: ../askme.php:26
+msgid "Edit Ask Me"
+msgstr "Редактировать вопрос"
+
+#: ../askme.php:28
+msgid "View Ask Me"
+msgstr "Посмотреть вопросы"
+
+#: ../askme.php:29
+msgid "Search Ask Me s"
+msgstr "Искать вопросы"
+
+#: ../askme.php:30
+msgid "No Ask Me found"
+msgstr "Вопросов не найдено"
+
+#: ../askme.php:31
+msgid "No Ask Me found in Trash"
+msgstr "Вопросов в корзине не найдено"
+
+#: ../askme.php:36
+msgid "Ask me"
+msgstr ""
+
+#: ../askme.php:59 ../askme.php:69
+msgid "Ask Tags"
+msgstr ""
+
+#: ../askme.php:60
+msgid "Ask Tag"
+msgstr ""
+
+#: ../askme.php:61
+msgid "Search Ask Tags"
+msgstr ""
+
+#: ../askme.php:62
+msgid "All Ask Tags"
+msgstr ""
+
+#: ../askme.php:63
+msgid "Parent Ask Tag"
+msgstr ""
+
+#: ../askme.php:64
+msgid "Parent Ask Tag:"
+msgstr ""
+
+#: ../askme.php:65
+msgid "Edit Ask Tag"
+msgstr ""
+
+#: ../askme.php:66
+msgid "Update Ask Tag"
+msgstr ""
+
+#: ../askme.php:67
+msgid "Add New Ask Tag"
+msgstr ""
+
+#: ../askme.php:68
+msgid "New Ask Tag Name"
+msgstr ""
+
+#: ../askme.php:92
+msgid "your question here"
+msgstr ""
+
+#: ../askme.php:141 ../askme.php:179
+msgid "<b>Success!</b> Ask Me is now ready for approval."
+msgstr ""
+
+#: ../askme.php:154 ../askme.php:192
+msgid "New Ask Me Received"
+msgstr ""
+
+#: ../askme.php:164
+msgid "<b>Error!</b> The Captcha was wrong."
+msgstr ""
+
+#: ../askme.php:200
+msgid "<b>Error!</b> You have to fill out the Captcha."
+msgstr ""
+
+#: ../askme.php:205
+msgid "<b>Error!</b> You have to fill out the Question."
+msgstr ""
+
+#: ../askme.php:212
+msgid "Question to ask"
+msgstr ""
+
+#: ../askme.php:258
+msgid "Name"
+msgstr ""
+
+#: ../askme.php:262 ../askme.php:361
+msgid "Email"
+msgstr ""
+
+#: ../askme.php:264
+msgid ""
+"If you provide an Email you will receive a message, once your Question is "
+"Answered."
+msgstr ""
+
+#: ../askme.php:267
+msgid "Advanced Options"
+msgstr ""
+
+#: ../askme.php:357
+msgid "Date"
+msgstr ""
+
+#: ../askme.php:359
+msgid "Answer"
+msgstr ""
+
+#: ../askme.php:360
+msgid "Username"
+msgstr ""
+
+#: ../askme.php:429
+msgid "Page"
+msgstr ""
+
+#: ../askme.php:429
+msgid "of"
+msgstr ""
+
+#: ../askme.php:488
+msgid "published"
+msgstr ""
+
+#: ../askme.php:499
+msgid "open"
+msgstr ""
+
+#: ../askme.php:513
+msgid "Ask Me Settings"
+msgstr ""
+
+#: ../askme.php:520
+msgid "E-Mail Alert on new Ask"
+msgstr ""
+
+#: ../askme.php:530
+msgid "Show Captcha"
+msgstr ""
+
+#: ../askme.php:540
+msgid "Captcha Public Key"
+msgstr ""
+
+#: ../askme.php:550
+msgid "Captcha Private Key"
+msgstr ""
+
+#: ../askme.php:560
+msgid "Number of Askmes"
+msgstr ""
+
+#: ../askme.php:570
+msgid "User Fields"
+msgstr ""
+
+#: ../askme.php:582
+msgid "Configure your Asks"
+msgstr ""
+
+#: ../askme.php:594
+msgid ""
+"Would you like to display User Fields, like E-Mail and Username? This would "
+"give your users the possibility to receive a Notification if an Answer is "
+"answered."
+msgstr ""
+
+#: ../askme.php:599 ../askme.php:604
+msgid ""
+"Get a key from <a href=\"https://www.google.com/recaptcha/admin/create\" "
+"target=\"_blank\">https://www.google.com/recaptcha/admin/create</a>"
+msgstr ""
+
+#: ../askme.php:609
+msgid "How much askmes you want to display on one page."
+msgstr ""
+
+#: ../askme.php:643
+msgid " - Ask Me - Answer Received"
+msgstr ""
+
+#: ../askme.php:643
+msgid "Your Ask Me has been Answered!"
+msgstr ""

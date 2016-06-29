@@ -12,3 +12,7 @@
  Text Domain:  spacious-child
 ***/
 @import url("../spacious/style.css");
+
+.wp-polls .Buttons{
+    background-color: #0FBE7C;
+}
