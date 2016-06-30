@@ -1,0 +1,8 @@
+[2016-06-30 06:35:21] Настройки бекапа:Database backup; Исключить:upgrade,cache.
+[2016-06-30 06:35:21] Clear temporary directory
+[2016-06-30 06:35:21] Send request to create backup
+[2016-06-30 06:35:21] Create database backup : D:\OpenServer\domains\pro-massage.dev/wp-content/upsupsystic/backup_2016_06_30-06_35_21_id1.sql
+[2016-06-30 06:35:23] Database backup complete
+[2016-06-30 06:35:23] Backup successful complete!
+[2016-06-30 06:35:23] Please, don't delete the line that is lower, it is used for technical purposes!
+a:8:{s:4:"full";s:1:"0";s:7:"wp_core";s:1:"0";s:7:"plugins";s:1:"0";s:6:"themes";s:1:"0";s:7:"uploads";s:1:"0";s:15:"any_directories";s:1:"0";s:7:"exclude";s:13:"upgrade,cache";s:16:"backupFolderSize";b:0;}

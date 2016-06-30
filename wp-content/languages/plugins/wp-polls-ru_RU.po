@@ -2,45 +2,13 @@
 # This file is distributed under the same license as the Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2016-02-25 14:20:19+0000\n"
+"PO-Revision-Date: 2016-06-29 14:11:59+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Generator: GlotPress/2.1.0-alpha\n"
 "Project-Id-Version: Stable (latest release)\n"
-
-#: wp-polls.php:1790
-msgid "Bad"
-msgstr "Плохой"
-
-#: wp-polls.php:1788
-msgid "Good"
-msgstr "Хороший"
-
-#: wp-polls.php:521 wp-polls.php:704
-msgid "Loading"
-msgstr "Загрузка"
-
-#: polls-manager.php:377
-msgid "Status"
-msgstr "Статус"
-
-#: wp-polls.php:1125
-msgid "Page %s of %s"
-msgstr "Страница %s из %s"
-
-#: polls-manager.php:251 polls-manager.php:451
-msgid "Delete"
-msgstr "Удалить"
-
-#: polls-options.php:367 polls-templates.php:494
-msgid "Save Changes"
-msgstr "Сохранить изменения"
-
-#: polls-manager.php:366 wp-polls.php:55
-msgid "Manage Polls"
-msgstr "Управление опросами"
 
 #: polls-logs.php:350
 msgid "Total number of records that matches this filter: <strong>%s</strong>"
@@ -118,6 +86,10 @@ msgstr "Количество голосов"
 msgid "Null Votes"
 msgstr "Нет голосов"
 
+#: polls-manager.php:251 polls-manager.php:451
+msgid "Delete"
+msgstr "Удалить"
+
 #: polls-manager.php:251
 msgid "You are about to delete this poll's answer '%s'."
 msgstr "Вы собираетесь удалить ответ '%s'."
@@ -154,6 +126,10 @@ msgstr "Открыть опрос"
 msgid "You are about to OPEN this poll '%s'."
 msgstr "Вы хотите ОТКРЫТЬ опрос '%s'?"
 
+#: polls-manager.php:366 wp-polls.php:55
+msgid "Manage Polls"
+msgstr "Управление опросами"
+
 #: polls-manager.php:367 wp-polls.php:53 wp-polls.php:1613 wp-polls.php:1647
 msgid "Polls"
 msgstr "Опросы"
@@ -166,6 +142,10 @@ msgstr "ID"
 #: wp-polls.php:1810 wp-polls.php:1813
 msgid "Total Voters"
 msgstr "Всего проголосовавших"
+
+#: polls-manager.php:377
+msgid "Status"
+msgstr "Статус"
 
 #: polls-manager.php:378
 msgid "Action"
@@ -219,6 +199,10 @@ msgstr "Всего опросов:"
 msgid "Total Polls' Answers:"
 msgstr "Всего ответов на опросы:"
 
+#: polls-manager.php:481
+msgid "Total Votes Cast:"
+msgstr "Всего голосов:"
+
 #: polls-manager.php:494
 msgid "Polls Logs"
 msgstr "Журналы опросов"
@@ -239,277 +223,281 @@ msgstr "Вы собираетесь очистить все журналы оп�
 msgid "No poll logs available."
 msgstr "Журналы пустые."
 
-#: polls-options.php:68 polls-options.php:128 polls-options.php:131
+#: polls-options.php:91 polls-options.php:151 polls-options.php:154
 msgid "Poll Bar Style"
 msgstr "Стиль полоски опроса"
 
-#: polls-options.php:69
+#: polls-options.php:92
 msgid "Poll AJAX Style"
 msgstr "AJAX стиль опросов"
 
-#: polls-options.php:70
+#: polls-options.php:93
 msgid "Sort Poll Answers By Option"
 msgstr "Сортировка ответов опроса"
 
-#: polls-options.php:71
+#: polls-options.php:94
 msgid "Sort Order Of Poll Answers Option"
 msgstr "Сортировка результатов опроса"
 
-#: polls-options.php:72
+#: polls-options.php:95
 msgid "Sort Poll Results By Option"
 msgstr "Сортировка результатов опроса"
 
-#: polls-options.php:73
+#: polls-options.php:96
 msgid "Sort Order Of Poll Results Option"
 msgstr "Порядок сортировки результатов опроса"
 
-#: polls-options.php:74
+#: polls-options.php:97
 msgid "Number Of Polls Per Page To Display In Poll Archive Option"
 msgstr "Количество опросов на страницу в архивах опросов"
 
-#: polls-options.php:75
+#: polls-options.php:98
 msgid "Type Of Polls To Display In Poll Archive Option"
 msgstr "Тип опросов для отображения в архиве опросов"
 
-#: polls-options.php:76
+#: polls-options.php:99
 msgid "Poll Archive URL Option"
 msgstr "URL архива опросов"
 
-#: polls-options.php:77
+#: polls-options.php:100
 msgid "Show Poll Achive Link Option"
 msgstr "Отображать ссылку на архив под опросом?"
 
-#: polls-options.php:78
+#: polls-options.php:101
 msgid "Current Active Poll Option"
 msgstr "Текущий активный опрос"
 
-#: polls-options.php:79
+#: polls-options.php:102
 msgid "Poll Close Option"
 msgstr "Когда опрос закрыт"
 
-#: polls-options.php:80 polls-options.php:278
+#: polls-options.php:103 polls-options.php:294
 msgid "Logging Method"
 msgstr "Метод отслеживания"
 
-#: polls-options.php:81
+#: polls-options.php:104
 msgid "Cookie And Log Expiry Option"
 msgstr "Сколько хранить журнал и cookie"
 
-#: polls-options.php:82
+#: polls-options.php:105
 msgid "Allow To Vote Option"
 msgstr "Разрешено голосовать"
 
-#: polls-options.php:87 polls-templates.php:84
+#: polls-options.php:110 polls-templates.php:84
 msgid "Updated"
 msgstr "Обновлено"
 
-#: polls-options.php:92 polls-templates.php:89
+#: polls-options.php:115 polls-templates.php:89
 msgid "No Poll Option Updated"
 msgstr "Никакие настройки опроса не обновлены"
 
-#: polls-options.php:126 wp-polls.php:57
+#: polls-options.php:149 wp-polls.php:57
 msgid "Poll Options"
 msgstr "Настройки опросов"
 
-#: polls-options.php:158
+#: polls-options.php:174
 msgid "Use CSS Style"
 msgstr "Использовать стиль CSS"
 
-#: polls-options.php:162
+#: polls-options.php:178
 msgid "Poll Bar Background"
 msgstr "Фон полоски опроса"
 
-#: polls-options.php:167
+#: polls-options.php:183
 msgid "Poll Bar Border"
 msgstr "Граница полоски опроса"
 
-#: polls-options.php:172
+#: polls-options.php:188
 msgid "Poll Bar Height"
 msgstr "Высота полоски опроса"
 
-#: polls-options.php:176
+#: polls-options.php:192
 msgid "Your poll bar will look like this"
 msgstr "Ваша полоска опроса будет выглядеть примерно так"
 
-#: polls-options.php:191
+#: polls-options.php:207
 msgid "Polls AJAX Style"
 msgstr "AJAX стиль опросов"
 
-#: polls-options.php:194
+#: polls-options.php:210
 msgid "Show Loading Image With Text"
 msgstr "Показывать изображение загрузки с текстом"
 
-#: polls-options.php:203
+#: polls-options.php:219
 msgid "Show Fading In And Fading Out Of Poll"
 msgstr "Эффект появления и затухания на опросе"
 
-#: polls-options.php:214
+#: polls-options.php:230
 msgid "Sorting Of Poll Answers"
 msgstr "Сортировка ответов опроса"
 
-#: polls-options.php:217
+#: polls-options.php:233
 msgid "Sort Poll Answers By:"
 msgstr "Сортировать ответы опроса по:"
 
-#: polls-options.php:220 polls-options.php:245
+#: polls-options.php:236 polls-options.php:261
 msgid "Exact Order"
 msgstr "Точный порядок"
 
-#: polls-options.php:221 polls-options.php:246
+#: polls-options.php:237 polls-options.php:262
 msgid "Alphabetical Order"
 msgstr "Алфавитный порядок"
 
-#: polls-options.php:222 polls-options.php:247
+#: polls-options.php:238 polls-options.php:263
 msgid "Random Order"
 msgstr "Случайный порядок"
 
-#: polls-options.php:227
+#: polls-options.php:243
 msgid "Sort Order Of Poll Answers:"
 msgstr "Порядок сортировки ответов опроса:"
 
-#: polls-options.php:230 polls-options.php:255
+#: polls-options.php:246 polls-options.php:271
 msgid "Ascending"
 msgstr "возрастание"
 
-#: polls-options.php:231 polls-options.php:256
+#: polls-options.php:247 polls-options.php:272
 msgid "Descending"
 msgstr "убывание"
 
-#: polls-options.php:238
+#: polls-options.php:254
 msgid "Sorting Of Poll Results"
 msgstr "Сортировка результатов опроса"
 
-#: polls-options.php:241
+#: polls-options.php:257
 msgid "Sort Poll Results By:"
 msgstr "Сортировать результаты опроса:"
 
-#: polls-options.php:244
+#: polls-options.php:260
 msgid "Votes Cast"
 msgstr "Число голосов"
 
-#: polls-options.php:252
+#: polls-options.php:268
 msgid "Sort Order Of Poll Results:"
 msgstr "Порядок сортировки результатов опроса:"
 
-#: polls-options.php:263
+#: polls-options.php:279
 msgid "Allow To Vote"
 msgstr "Кому разрешено голосовать"
 
-#: polls-options.php:266
+#: polls-options.php:282
 msgid "Who Is Allowed To Vote?"
 msgstr "Кому разрешено голосовать?"
 
-#: polls-options.php:269
+#: polls-options.php:285
 msgid "Guests Only"
 msgstr "Только гостям"
 
-#: polls-options.php:270
+#: polls-options.php:286
 msgid "Registered Users Only"
 msgstr "Только зарегистрированным пользователям"
 
-#: polls-options.php:271
+#: polls-options.php:287
 msgid "Registered Users And Guests"
 msgstr "Зарегистрированным пользователям и гостям"
 
-#: polls-options.php:281
+#: polls-options.php:297
 msgid "Poll Logging Method:"
 msgstr "Метод отслеживания опроса:"
 
-#: polls-options.php:284
+#: polls-options.php:300
 msgid "Do Not Log"
 msgstr "Не записывать в журнал"
 
-#: polls-options.php:285
+#: polls-options.php:301
 msgid "Logged By Cookie"
 msgstr "Отслеживать по Cookie"
 
-#: polls-options.php:286
+#: polls-options.php:302
 msgid "Logged By IP"
 msgstr "Отслеживать по IP"
 
-#: polls-options.php:287
+#: polls-options.php:303
 msgid "Logged By Cookie And IP"
 msgstr "Отслеживать по Cookie и IP"
 
-#: polls-options.php:288
+#: polls-options.php:304
 msgid "Logged By Username"
 msgstr "Отслеживать по имени пользователя"
 
-#: polls-options.php:293
+#: polls-options.php:309
 msgid "Expiry Time For Cookie And Log:"
 msgstr "Истечение времени для cookie и журнала:"
 
-#: polls-options.php:294
+#: polls-options.php:310
 msgid "seconds (0 to disable)"
 msgstr "секунд (0 чтобы отключить)"
 
-#: polls-options.php:299
+#: polls-options.php:315
 msgid "Poll Archive"
 msgstr "Архив опросов"
 
-#: polls-options.php:302
+#: polls-options.php:318
 msgid "Number Of Polls Per Page:"
 msgstr "Количество опросов на страницу:"
 
-#: polls-options.php:306
+#: polls-options.php:322
 msgid "Type Of Polls To Display In Poll Archive:"
 msgstr "Тип опросов для отображения в архиве опросов:"
 
-#: polls-options.php:309
+#: polls-options.php:325
 msgid "Closed Polls Only"
 msgstr "Только закрытые опросы"
 
-#: polls-options.php:310
+#: polls-options.php:326
 msgid "Opened Polls Only"
 msgstr "Только открытые опросы"
 
-#: polls-options.php:311
+#: polls-options.php:327
 msgid "Closed And Opened Polls"
 msgstr "Закрытые и открытые опросы"
 
-#: polls-options.php:316
+#: polls-options.php:332
 msgid "Poll Archive URL:"
 msgstr "URL архива опросов:"
 
-#: polls-options.php:320
+#: polls-options.php:336
 msgid "Note"
 msgstr "Примечание"
 
-#: polls-options.php:321
+#: polls-options.php:337
 msgid "Only polls' results will be shown in the Poll Archive regardless of whether the poll is closed or opened."
 msgstr "Только результаты опросов будут показывать в Архиве опросов независимо от того, закрыт ли опрос или открыт."
 
-#: polls-options.php:326 polls-options.php:329
+#: polls-options.php:342 polls-options.php:345
 msgid "Current Active Poll"
 msgstr "Текущий активный опрос"
 
-#: polls-options.php:332 wp-polls.php:1666
+#: polls-options.php:348 wp-polls.php:1666
 msgid "Do NOT Display Poll (Disable)"
 msgstr "НЕ отображать опрос (отключить)"
 
-#: polls-options.php:333 wp-polls.php:1667
+#: polls-options.php:349 wp-polls.php:1667
 msgid "Display Random Poll"
 msgstr "Отображать случайный опрос"
 
-#: polls-options.php:334 wp-polls.php:1668
+#: polls-options.php:350 wp-polls.php:1668
 msgid "Display Latest Poll"
 msgstr "Отображать последний опрос"
 
-#: polls-options.php:354
+#: polls-options.php:370
 msgid "When Poll Is Closed"
 msgstr "Когда опрос закрыт:"
 
-#: polls-options.php:357
+#: polls-options.php:373
 msgid "Display Poll's Results"
 msgstr "Отображать результаты опроса"
 
-#: polls-options.php:358
+#: polls-options.php:374
 msgid "Display Disabled Poll's Voting Form"
 msgstr "Отображать отключенную форму для голосования"
 
-#: polls-options.php:359
+#: polls-options.php:375
 msgid "Do Not Display Poll In Post/Sidebar"
 msgstr "Не отображать опрос в записи/сайдбаре"
+
+#: polls-options.php:383 polls-templates.php:494
+msgid "Save Changes"
+msgstr "Сохранить изменения"
 
 #: polls-templates.php:65
 msgid "Voting Form Header Template"
@@ -588,6 +576,11 @@ msgstr "Просмотреть результаты"
 #: wp-polls.php:1808
 msgid ","
 msgstr ","
+
+#: polls-templates.php:115 polls-templates.php:118 wp-polls.php:1807
+#: wp-polls.php:1808
+msgid "Votes"
+msgstr "Голосов"
 
 #: polls-templates.php:118 wp-polls.php:1808
 msgid "You Have Voted For This Choice"
@@ -870,6 +863,10 @@ msgstr "Пожалуйста отметьте галочкой \\'Да\\' есл
 msgid "Delete Poll Answer"
 msgstr "Удалить ответ опроса"
 
+#: wp-polls.php:251
+msgid "Poll"
+msgstr "Опрос"
+
 #: wp-polls.php:252 wp-polls.php:289
 msgid "Enter Poll ID"
 msgstr "Введите ID опроса"
@@ -882,17 +879,21 @@ msgstr "Ошибка: ID опроса должно быть числом"
 msgid "Please enter Poll ID again"
 msgstr "Пожалуйста, введите ID опроса еще раз"
 
-#: wp-polls.php:251
-msgid "Poll"
-msgstr "Опрос"
-
 #: wp-polls.php:292
 msgid "Insert Poll"
 msgstr "Вставить опрос"
 
+#: wp-polls.php:521 wp-polls.php:704
+msgid "Loading"
+msgstr "Загрузка"
+
 #: wp-polls.php:757
 msgid "Note: There is a poll embedded within this post, please visit the site to participate in this post's poll."
 msgstr "Примечание: когда опрос включен в запись, пожалуйста"
+
+#: wp-polls.php:1125
+msgid "Page %s of %s"
+msgstr "Страница %s из %s"
 
 #: wp-polls.php:1127
 msgid "&laquo; First"
@@ -925,6 +926,10 @@ msgstr "Невозможно обновить общее количество г
 #: wp-polls.php:1383
 msgid "You Had Already Voted For This Poll. Poll ID #%s"
 msgstr "Вы уже участвовали в данном опросе. ID опроса #%s"
+
+#: wp-polls.php:1386
+msgid "Poll ID #%s is closed"
+msgstr "Опрос с  ID #%s закрыт"
 
 #: wp-polls.php:1389
 msgid "Invalid Poll ID. Poll ID #%s"
@@ -978,7 +983,7 @@ msgstr "Ошибка при удалении темы опроса '%s'"
 msgid "Poll '%s' Deleted Successfully"
 msgstr "Опрос '%s' успешно удален"
 
-#. #-#-#-#-#  tmp-wp-polls.pot (WP-Polls 2.73)  #-#-#-#-#
+#. #-#-#-#-#  tmp-wp-polls.pot (WP-Polls 2.73.1)  #-#-#-#-#
 #. Plugin Name of the plugin/theme
 #: wp-polls.php:1585 wp-polls.php:1587 wp-polls.php:1597
 msgid "WP-Polls"
@@ -997,6 +1002,13 @@ msgid_plural "<strong>%s</strong> polls' answers were given."
 msgstr[0] "Получен <strong>%s</strong> ответ."
 msgstr[1] "Получено <strong>%s</strong> ответа."
 msgstr[2] "Получен <strong>%s</strong> ответов."
+
+#: wp-polls.php:1601
+msgid "<strong>%s</strong> vote was cast."
+msgid_plural "<strong>%s</strong> votes were cast."
+msgstr[0] "<strong>%s</strong> голосование было сброшено."
+msgstr[1] "<strong>%s</strong> голосования было сброшено."
+msgstr[2] "<strong>%s</strong> голосований было сброшено.."
 
 #: wp-polls.php:1612
 msgid "WP-Polls polls"
@@ -1018,9 +1030,17 @@ msgstr "Опрос для отображения:"
 msgid "How Is My Site?"
 msgstr "Как вам мой сайт"
 
+#: wp-polls.php:1788
+msgid "Good"
+msgstr "Хороший"
+
 #: wp-polls.php:1789
 msgid "Excellent"
 msgstr "Превосходный"
+
+#: wp-polls.php:1790
+msgid "Bad"
+msgstr "Плохой"
 
 #: wp-polls.php:1791
 msgid "Can Be Improved"
@@ -1030,21 +1050,13 @@ msgstr "Мог быть лучше"
 msgid "No Comments"
 msgstr "Без комментариев"
 
-#. Description of the plugin/theme
-msgid "Adds an AJAX poll system to your WordPress blog. You can easily include a poll into your WordPress's blog post/page. WP-Polls is extremely customizable via templates and css styles and there are tons of options for you to choose to ensure that WP-Polls runs the way you wanted. It now supports multiple selection of answers."
-msgstr "Добавляет AJAX опросы в ваш блог WordPress. Вы можете легко включить опрос в записи / страницы вашего блога WordPress. WP-Polls хорошо настраивается через шаблоны и стили CSS и есть куча вариантов для вас на выбор, что гарантирует, что WP-Polls будет работать так, как вы хотели. Теперь поддерживается выбор нескольких вариантов ответа.."
-
-#: polls-manager.php:481
-msgid "Total Votes Cast:"
-msgstr "Всего голосов:"
-
-#: wp-polls.php:1386
-msgid "Poll ID #%s is closed"
-msgstr "Опрос с  ID #%s закрыт"
-
 #. Plugin URI of the plugin/theme
 msgid "https://lesterchan.net/portfolio/programming/php/"
 msgstr "https://lesterchan.net/portfolio/programming/php/"
+
+#. Description of the plugin/theme
+msgid "Adds an AJAX poll system to your WordPress blog. You can easily include a poll into your WordPress's blog post/page. WP-Polls is extremely customizable via templates and css styles and there are tons of options for you to choose to ensure that WP-Polls runs the way you wanted. It now supports multiple selection of answers."
+msgstr "Добавляет AJAX опросы в ваш блог WordPress. Вы можете легко включить опрос в записи / страницы вашего блога WordPress. WP-Polls хорошо настраивается через шаблоны и стили CSS и есть куча вариантов для вас на выбор, что гарантирует, что WP-Polls будет работать так, как вы хотели. Теперь поддерживается выбор нескольких вариантов ответа.."
 
 #. Author of the plugin/theme
 msgid "Lester 'GaMerZ' Chan"
@@ -1053,37 +1065,6 @@ msgstr "Lester 'GaMerZ' Chan"
 #. Author URI of the plugin/theme
 msgid "https://lesterchan.net"
 msgstr "https://lesterchan.net"
-
-#: polls-templates.php:115 polls-templates.php:118 wp-polls.php:1807
-#: wp-polls.php:1808
-msgid "Votes"
-msgstr "Голоса"
-
-#: wp-polls.php:1601
-msgid "<strong>%s</strong> vote was cast."
-msgid_plural "<strong>%s</strong> votes were cast."
-msgstr[0] "<strong>%s</strong> голосование было сброшено."
-msgstr[1] "<strong>%s</strong> голосования было сброшено."
-msgstr[2] "<strong>%s</strong> голосований было сброшено.."
-
-#: polls-logs.php:279 polls-logs.php:329
-msgid "Date"
-msgstr "Дата"
-
-#: polls-add.php:206 polls-manager.php:348
-msgid "Cancel"
-msgstr "Отмена"
-
-#: polls-add.php:176 polls-manager.php:279 polls-options.php:197
-#: polls-options.php:206 wp-polls.php:1658
-msgid "No"
-msgstr "Нет"
-
-#: polls-add.php:177 polls-logs.php:371 polls-manager.php:280
-#: polls-manager.php:502 polls-options.php:198 polls-options.php:207
-#: wp-polls.php:1659
-msgid "Yes"
-msgstr "Да"
 
 #: polls-add.php:16 polls-add.php:139 polls-add.php:206 wp-polls.php:56
 msgid "Add Poll"
@@ -1096,6 +1077,22 @@ msgstr "Ошибка при добавлении опроса '%s'."
 #: polls-add.php:104 polls-manager.php:168
 msgid "Error In Adding Poll's Answer '%s'."
 msgstr "Ошибка при добавлении варианта ответа  '%s для опроса'."
+
+#: polls-add.php:107
+msgid "Poll's Answer is empty."
+msgstr "Пустое поле ответа на вопрос."
+
+#: polls-add.php:116
+msgid "Poll '%s' (ID: %s) added successfully. Embed this poll with the shortcode: %s or go back to <a href=\"%s\">Manage Polls</a>"
+msgstr "Опрос '%s' (ID: %s) успешно добавлен. Вы можете встроить этот опрос с помощью шорткода: %s или вернуться в <a href=\"%s\">Управление опросами</a>"
+
+#: polls-add.php:119
+msgid "Poll '%s' (ID: %s) (Shortcode: %s) added successfully, but there are some errors with the Poll's Answers. Embed this poll with the shortcode: %s or go back to <a href=\"%s\">Manage Polls</a>"
+msgstr "Опрос '%s' (ID: %s) (Shortcode: %s) успешно добавлен, но есть некоторые ошибки с ответами в опросе. Вставить этот опрос с шорткодом: %s или вернуться к <a href=\"%s\">Управлению опросами</a>"
+
+#: polls-add.php:125
+msgid "Poll Question is empty."
+msgstr "Ответ опроса пуст."
 
 #: polls-add.php:141 polls-manager.php:219
 msgid "Poll Question"
@@ -1129,6 +1126,17 @@ msgstr "Многократные ответы"
 msgid "Allows Users To Select More Than One Answer?"
 msgstr "Разрешить посетителям выбирать более чем один ответ?"
 
+#: polls-add.php:176 polls-manager.php:279 polls-options.php:213
+#: polls-options.php:222 wp-polls.php:1658
+msgid "No"
+msgstr "Нет"
+
+#: polls-add.php:177 polls-logs.php:371 polls-manager.php:280
+#: polls-manager.php:502 polls-options.php:214 polls-options.php:223
+#: wp-polls.php:1659
+msgid "Yes"
+msgstr "Да"
+
 #: polls-add.php:182 polls-manager.php:285
 msgid "Maximum Number Of Selected Answers Allowed?"
 msgstr "Максимально разрешенное количество выбираемых ответов"
@@ -1149,6 +1157,10 @@ msgstr "Дата/время окончания опроса"
 msgid "Do NOT Expire This Poll"
 msgstr " НЕ ЗАВЕРШАТЬ этот опрос"
 
+#: polls-add.php:206 polls-manager.php:348
+msgid "Cancel"
+msgstr "Отмена"
+
 #: polls-logs.php:16 polls-logs.php:17 polls-logs.php:21 polls-logs.php:56
 #: polls-logs.php:60 polls-logs.php:93 polls-logs.php:96 wp-polls.php:1329
 msgid "Guest"
@@ -1157,6 +1169,34 @@ msgstr "Гость"
 #: polls-logs.php:114
 msgid "Poll's Logs"
 msgstr "Журналы опроса"
+
+#: polls-logs.php:117
+msgid "There are a total of <strong>%s</strong> recorded vote for this poll."
+msgid_plural "There are a total of <strong>%s</strong> recorded votes for this poll."
+msgstr[0] "В этом опросе участвовал <strong>%s</strong> человек."
+msgstr[1] "В этом опросе участвовало <strong>%s</strong> человека."
+msgstr[2] "В этом опросе участвовало <strong>%s</strong> человек."
+
+#: polls-logs.php:118
+msgid "<strong>&raquo;</strong> <strong>%s</strong> vote is cast by registered users"
+msgid_plural "<strong>&raquo;</strong> <strong>%s</strong> votes are cast by registered users"
+msgstr[0] "<strong>&raquo;</strong> <strong>%s</strong> голосование произведено зарегистрированными пользователями"
+msgstr[1] "<strong>&raquo;</strong> <strong>%s</strong> голосования произведено зарегистрированными пользователями"
+msgstr[2] "<strong>&raquo;</strong> <strong>%s</strong> голосований произведено зарегистрированными пользователями"
+
+#: polls-logs.php:119
+msgid "<strong>&raquo;</strong> <strong>%s</strong> vote is cast by comment authors"
+msgid_plural "<strong>&raquo;</strong> <strong>%s</strong> votes are cast by comment authors"
+msgstr[0] "<strong>&raquo;</strong> <strong>%s</strong> голосование прокомментировано авторами"
+msgstr[1] "<strong>&raquo;</strong> <strong>%s</strong> голосования прокомментировано авторами"
+msgstr[2] "<strong>&raquo;</strong> <strong>%s</strong> голосований прокомментировано авторами"
+
+#: polls-logs.php:120
+msgid "<strong>&raquo;</strong> <strong>%s</strong> vote is cast by guests"
+msgid_plural "<strong>&raquo;</strong> <strong>%s</strong> votes are cast by guests"
+msgstr[0] "<strong>&raquo;</strong> <strong>%s</strong> голосование произведено гостями"
+msgstr[1] "<strong>&raquo;</strong> <strong>%s</strong> голосования произведено гостями"
+msgstr[2] "<strong>&raquo;</strong> <strong>%s</strong> голосований произведено гостями"
 
 #: polls-logs.php:125
 msgid "Filter Poll's Logs"
@@ -1253,6 +1293,10 @@ msgstr "IP адрес"
 msgid "Host"
 msgstr "Имя узла"
 
+#: polls-logs.php:279 polls-logs.php:329
+msgid "Date"
+msgstr "Дата"
+
 #: polls-logs.php:286 polls-logs.php:316 polls-manager.php:307
 #: polls-manager.php:319 polls-manager.php:396 polls-manager.php:404
 #: wp-polls.php:437 wp-polls.php:442 wp-polls.php:562 wp-polls.php:567
@@ -1271,47 +1315,3 @@ msgstr "№"
 #: polls-logs.php:328
 msgid "IP/Host"
 msgstr "IP/Имя узла"
-
-#: polls-add.php:107
-msgid "Poll's Answer is empty."
-msgstr "Ответ опроса пуст."
-
-#: polls-add.php:116
-msgid "Poll '%s' (ID: %s) added successfully. Embed this poll with the shortcode: %s or go back to <a href=\"%s\">Manage Polls</a>"
-msgstr "Опрос '%s' (ID: %s) успешно добавлен. Вставить этот опрос шорткодом: %s или вернуться к <a href=\"%s\">Управлению опросами</a>"
-
-#: polls-add.php:119
-msgid "Poll '%s' (ID: %s) (Shortcode: %s) added successfully, but there are some errors with the Poll's Answers. Embed this poll with the shortcode: %s or go back to <a href=\"%s\">Manage Polls</a>"
-msgstr "Опрос '%s' (ID: %s) (Shortcode: %s) успешно добавлен, но есть некоторые ошибки с ответами в опросе. Вставить этот опрос с шорткодом: %s или вернуться к <a href=\"%s\">Управлению опросами</a>"
-
-#: polls-add.php:125
-msgid "Poll Question is empty."
-msgstr "Ответ опроса пуст."
-
-#: polls-logs.php:117
-msgid "There are a total of <strong>%s</strong> recorded vote for this poll."
-msgid_plural "There are a total of <strong>%s</strong> recorded votes for this poll."
-msgstr[0] "В этом опросе участвовал <strong>%s</strong> человек."
-msgstr[1] "В этом опросе участвовало <strong>%s</strong> человека."
-msgstr[2] "В этом опросе участвовало <strong>%s</strong> человек."
-
-#: polls-logs.php:118
-msgid "<strong>&raquo;</strong> <strong>%s</strong> vote is cast by registered users"
-msgid_plural "<strong>&raquo;</strong> <strong>%s</strong> votes are cast by registered users"
-msgstr[0] "<strong>&raquo;</strong> <strong>%s</strong> голосование произведено зарегистрированными пользователями"
-msgstr[1] "<strong>&raquo;</strong> <strong>%s</strong> голосования произведено зарегистрированными пользователями"
-msgstr[2] "<strong>&raquo;</strong> <strong>%s</strong> голосований произведено зарегистрированными пользователями"
-
-#: polls-logs.php:119
-msgid "<strong>&raquo;</strong> <strong>%s</strong> vote is cast by comment authors"
-msgid_plural "<strong>&raquo;</strong> <strong>%s</strong> votes are cast by comment authors"
-msgstr[0] "<strong>&raquo;</strong> <strong>%s</strong> голосование прокомментировано авторами"
-msgstr[1] "<strong>&raquo;</strong> <strong>%s</strong> голосования прокомментировано авторами"
-msgstr[2] "<strong>&raquo;</strong> <strong>%s</strong> голосований прокомментировано авторами"
-
-#: polls-logs.php:120
-msgid "<strong>&raquo;</strong> <strong>%s</strong> vote is cast by guests"
-msgid_plural "<strong>&raquo;</strong> <strong>%s</strong> votes are cast by guests"
-msgstr[0] "<strong>&raquo;</strong> <strong>%s</strong> голосование произведено гостями"
-msgstr[1] "<strong>&raquo;</strong> <strong>%s</strong> голосования произведено гостями"
-msgstr[2] "<strong>&raquo;</strong> <strong>%s</strong> голосований произведено гостями"
