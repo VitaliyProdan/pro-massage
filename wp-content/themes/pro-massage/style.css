@@ -1,16 +1,13 @@
 /*
- Theme Name:   Pro Massage
- Theme URI:    http://vk.com/id30239319
- Description:  Spacious Child Theme
- Author:       Vitalii Prodan
- Author URI:   http://vk.com/id30239319
- Template:     spacious
- Version:      1.0.0
- License:      GNU General Public License v2 or later
- License URI:  http://www.gnu.org/licenses/gpl-2.0.html
- Tags:         light, white, dark, two-columns, right-sidebar, left-sidebar, fluid-layout, responsive-layout, custom-header, custom-background, custom-menu, custom-colors, sticky-post, threaded-comments, translation-ready, featured-images, theme-options
- Text Domain:  spacious-child
-***/
+Theme Name:     Pro Massage
+Theme URI:      http://vk.com/id30239319
+Description:    Child theme for spacious
+Author:         Vitalii Prodan
+Author URI:     http: //example.com/about/
+Template:       spacious
+Version:        0.1.0
+*/
+
 @import url("../spacious/style.css");
 
 .wp-polls .Buttons{
