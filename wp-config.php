@@ -30,7 +30,7 @@ if (getenv('OPENSHIFT_APP_NAME') != "") {
 	/** These settings can be configured for your local development environment
 	and will not affect your OpenShift configuration */
 } else {
-	define('DB_NAME', 'pro_massage');
+	define('DB_NAME', 'promassage');
 	/** MySQL database username */
 	define('DB_USER', 'root');
 	/** MySQL database password */
